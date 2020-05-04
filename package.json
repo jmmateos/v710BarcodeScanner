@@ -16,12 +16,12 @@
     "handheld",
     "barcodescanner"
   ],
-  "engines": [
+  "engines":
     {
       "name": "cordova",
       "version": ">=3.0.0"
     }
-  ],
+  ,
   "repository": {
     "type": "git",
     "url": "https://github.com/jmmateos/v710BarcodeScanner.git"
