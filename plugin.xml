@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-v710-barcodescanner" version="0.0.1">
+    <name>v710BarcodeScanner</name>
+
+    <description>A android Cordova/Phonegap plugin driver for Handheld V710 barcode scanner.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,barcode,scanner,reader</keywords>
+    <repo>https://github.com/jmmateos/v710BarcodeScanner.git</repo>
+    <issue>https://github.com/jmmateos/v710BarcodeScanner/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/barcodescanner.js" name="BarcodeScanner">
+        <clobbers target="cordova.plugins.v710BarcodeScanner" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BarcodeScanner">
+                <param name="android-package" value="com.jmmateos.plugins.BarcodeScanner.BarcodeScanner"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/BarcodeScanner.java" target-dir="src/com/jmmateos/plugins/BarcodeScanner" />
+    </platform>
+</plugin>

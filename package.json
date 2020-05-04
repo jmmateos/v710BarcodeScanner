@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-v710-barcodescanner",
+  "version": "0.0.1",
+  "description": "A android Cordova/Phonegap plugin driver for Handheld V710 barcode scanner.",
+  "cordova": {
+    "id": "cordova-plugin-v710-barcodescanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "v710",
+    "handheld",
+    "barcodescanner"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmmateos/v710BarcodeScanner.git"
+  },
+  "author": "Jose Manuel Mateos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmmateos/v710BarcodeScanner/issues"
+  },
+  "homepage": "https://github.com/jmmateos/v710BarcodeScanner/",
+  "devDependencies": {}
+}
