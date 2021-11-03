@@ -26,6 +26,7 @@ import org.json.JSONObject;
 public class BarcodeScanner extends CordovaPlugin {
     private static final String TAG = "V710BarcodeScanner";
     private static final String V710 = "V710";
+    private static final String SEYPOS = "SEYPOS";
     private static final String AVAILABLE = "available";
     private static final String SCANNING = "registerScanningReceiver";
     private static final String SCANDATA = "registerScanDataReceiver";
@@ -67,8 +68,13 @@ public class BarcodeScanner extends CordovaPlugin {
             PluginResult result = new PluginResult(PluginResult.Status.OK, true);
             callbackContext.sendPluginResult(result);
             return true;
+        } else if (android.os.Build.MANUFACTURER.equals(SEYPOS)) {
+            Log.d(TAG, "available SEYPOS: " + android.os.Build.MANUFACTURER);
+            PluginResult result = new PluginResult(PluginResult.Status.OK, true);
+            callbackContext.sendPluginResult(result);
+            return true;
         } else {
-            Log.d(TAG, "not available V710 is " + android.os.Build.MANUFACTURER);
+            Log.d(TAG, "not available barcode scanner SE4710 is " + android.os.Build.MANUFACTURER);
             PluginResult result = new PluginResult(PluginResult.Status.OK, false);
             callbackContext.sendPluginResult(result);
             return false;
