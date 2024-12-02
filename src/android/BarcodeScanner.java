@@ -1,4 +1,4 @@
-package com.jmmateos.plugins.BarcodeScanner;
+package com.jmmateos.plugins.BarcodeScannerSE4710;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-public class BarcodeScanner extends CordovaPlugin {
+public class BarcodeScannerSE4710 extends CordovaPlugin {
     private static final String TAG = "V710BarcodeScanner";
     private static final String V710 = "V710";
     private static final String SEYPOS = "SEYPOS";

@@ -15,12 +15,12 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/barcodescanner.js" name="BarcodeScanner">
+    <js-module src="www/barcodescanner.js" name="BarcodeScannerSE4710">
         <clobbers target="cordova.plugins.v710BarcodeScanner" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="BarcodeScanner">
+            <feature name="BarcodeScannerSE4710">
                 <param name="android-package" value="com.jmmateos.plugins.BarcodeScanner.BarcodeScanner"/>
             </feature>
         </config-file>

@@ -8,7 +8,7 @@
 // TypeScript Version: 2.3
 
 interface CordovaPlugins {
-    v710BarcodeScanner: BarcodeScanner;
+    v710BarcodeScanner: BarcodeScannerSE4710;
 }
 
 interface ScanData {
@@ -21,7 +21,7 @@ interface ScanData {
     type: string;   
 }
 
-interface BarcodeScanner {
+interface BarcodeScannerSE4710 {
     /**
      * It is a compatible device?
      * @param onSuccess returns true or false.
