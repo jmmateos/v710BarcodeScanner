@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-v710-barcodescanner",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A android Cordova/Phonegap plugin driver for Handheld V710 barcode scanner.",
   "cordova": {
     "id": "cordova-plugin-v710-barcodescanner",
