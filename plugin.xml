@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-v710-barcodescanner" version="0.0.3">
+        id="cordova-plugin-v710-barcodescanner" version="0.0.4">
     <name>v710BarcodeScanner</name>
 
     <description>A android Cordova/Phonegap plugin driver for Handheld V710 barcode scanner.</description>
@@ -21,9 +21,9 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="BarcodeScannerSE4710">
-                <param name="android-package" value="com.jmmateos.plugins.BarcodeScanner.BarcodeScanner"/>
+                <param name="android-package" value="com.jmmateos.plugins.BarcodeScanner.BarcodeScannerSE4710"/>
             </feature>
         </config-file>
-        <source-file src="src/android/BarcodeScanner.java" target-dir="src/com/jmmateos/plugins/BarcodeScanner" />
+        <source-file src="src/android/BarcodeScannerSE4710.java" target-dir="src/com/jmmateos/plugins/BarcodeScannerSE4710" />
     </platform>
 </plugin>
