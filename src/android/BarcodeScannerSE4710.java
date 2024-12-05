@@ -1,4 +1,4 @@
-package com.jmmateos.plugins.BarcodeScannerSE4710;
+package com.jmmateos.plugins.BarcodeScanner;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
